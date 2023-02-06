@@ -12,6 +12,7 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 //
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -95,13 +96,16 @@ const WorkExperience = (props) => {
           onChange={handleChange}
           placeholder="Position"
         />
+
         <TextField
           name="startDate"
+          type="date"
           value={exp.startDate}
           onChange={handleChange}
           placeholder="Start Date"
         />
         <TextField
+          type="date"
           name="endDate"
           value={exp.endDate}
           onChange={handleChange}
