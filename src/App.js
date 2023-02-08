@@ -8,6 +8,7 @@ import Education from "./Education";
 import WorkExperience from "./WorkExperience";
 import FinalPage from "./FinalPage";
 import FinalUIPage from "./FinalUIPage";
+import HomePage from "./HomePage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/personal-details" element={<PersonalDetails />} />
           <Route path="/education" element={<Education />} />
           <Route path="/work-experience" element={<WorkExperience />} />
